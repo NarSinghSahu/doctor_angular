@@ -1,0 +1,18 @@
+
+<nav class="navbar navbar-expand-lg bg-warning navbar-dark ">
+    <a class="navbar-brand text-white mr-auto">Jeevan Hospital</a>
+    <app-search [doctorGet]="doctor" (doctorSend)="passDoctor2($event)"></app-search>
+    <br><br>
+</nav>
+
+<div class="container">
+
+<!--<app-profile> Not Working : check your console ... </app-profile>-->
+
+<app-doctors [showSearchedDoctor]="doctorSearched" (passDoctor)="passDoctor1($event)">Loading... </app-doctors>
+
+</div>
+
+<div class="footor mt-5">
+    <div class="navbar fixed-bottom bg-warning navbar-dark mb-0"></div>
+</div>
